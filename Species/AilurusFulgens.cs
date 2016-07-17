@@ -1,14 +1,13 @@
-using System;
+using Zoolandia.Genera;
 
 namespace Zoolandia.Species
 {
-    public class AilurusFulgens : Animal, IAmbulatory
+    public class AilurusFulgens : Ailurus, IAmbulatory
     {
         public AilurusFulgens (string name, double height, double weight) : base(name, height, weight) 
         {
             this.CommonName = "Red panda";
             this.ScientificName = "Ailurus fulgens";
-            this.Genus = "Ailurus";
         }
         public override string Eat(int numberOfFoods) 
         {
@@ -32,15 +31,7 @@ namespace Zoolandia.Species
         }
         public override string Speak() 
         {
-            return "yiff yiff";
-        }
-        public string Walk()
-        {
-            return this.Name + " is walking.";
-        }
-        public string Run()
-        {
-            return this.Name + " is running!";
+            return "Yiff! Yiff!";
         }
     }
 }

@@ -1,5 +1,3 @@
-using System;
-
 namespace Zoolandia.Species
 {
     public class CanisLupusFamiliaris : Animal, IAmbulatory

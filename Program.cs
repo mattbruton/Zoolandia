@@ -21,7 +21,9 @@ namespace Zoolandia
             Console.WriteLine(pandaMan.Eat(0));
             Console.WriteLine(pandaMan.Name + " weighs in at "+ pandaMan.Weight + " lbs.");
             CanisLupusFamiliaris animal_One = new CanisLupusFamiliaris("Lunchbox", 35.5, 15.2);
-            Console.WriteLine(animal_One.Eat());
+            Console.WriteLine(animal_One.Eat(4));
+            Console.WriteLine(pandaMan.Run());
+            
         }
     }
 }
