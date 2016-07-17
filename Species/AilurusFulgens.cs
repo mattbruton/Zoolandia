@@ -2,32 +2,45 @@ using System;
 
 namespace Zoolandia.Species
 {
-    public class AilurusFulgens : Animal
+    public class AilurusFulgens : Animal, IAmbulatory
     {
-        public AilurusFulgens (string name) : base(name) 
+        public AilurusFulgens (string name, double height, double weight) : base(name, height, weight) 
         {
-            
+            this.CommonName = "Red panda";
+            this.ScientificName = "Ailurus fulgens";
+            this.Genus = "Ailurus";
         }
         public override string Eat(int numberOfFoods) 
         {
-            string animalEat = base.Eat(3);
-            return animalEat + " Nom nom nom..." + "!";
+            string animalEat = base.Eat(numberOfFoods);
+            if (numberOfFoods <= 0)
+            {
+                return "'What kind of game are you trying to play, human? Give moar " + this.CommonName.ToLower() + " foods.'";
+            }
+            else if (numberOfFoods == 1)
+            {
+                return "'Just " + numberOfFoods + " bite of panda food? I could die from hunger!'";
+            }
+            else 
+            {
+            return animalEat + "'Thanks for the " + numberOfFoods + " bites of panda food!'";
+            }
         }
-
         public string Eat() 
         {
-            return "WTF did I just eat?!";
+            return this.Name + " chews on some bamboo... or maybe a small bird.";
         }
-
-        public string Welcome (string name)
+        public override string Speak() 
         {
-            this.Name = name;
-            return Welcome();
+            return "yiff yiff";
         }
-
-        public string Welcome()
+        public string Walk()
         {
-            return this.Name;
+            return this.Name + " is walking.";
+        }
+        public string Run()
+        {
+            return this.Name + " is running!";
         }
     }
 }
