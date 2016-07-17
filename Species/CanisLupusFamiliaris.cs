@@ -7,6 +7,7 @@ namespace Zoolandia.Species
             this.CommonName = "Domestic dog";
             this.ScientificName = "Canis lupus familiaris";
             this.Genus = "Canis";
+            this.PrimaryDiet = "Dog Chow";
         }
         public string Eat()
         {

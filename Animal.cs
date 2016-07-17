@@ -8,6 +8,7 @@ namespace Zoolandia
             this.Height = height;
             this.Weight = weight;
         }
+        protected string PrimaryDiet;
         public string Genus = null;
         public string ScientificName = "Latin Words";
         public string CommonName = "Animal";

@@ -8,6 +8,7 @@ namespace Zoolandia.Species
         {
             this.CommonName = "Red panda";
             this.ScientificName = "Ailurus fulgens";
+            this.PrimaryDiet = "Bamboo";
         }
         public override string Eat(int numberOfFoods) 
         {
@@ -27,7 +28,7 @@ namespace Zoolandia.Species
         }
         public string Eat() 
         {
-            return this.Name + " chews on some bamboo... or maybe a small bird.";
+            return this.Name + " chews on some " + this.PrimaryDiet.ToLower() + " ... or maybe a small bird.";
         }
         public override string Speak() 
         {
