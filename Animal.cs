@@ -23,7 +23,7 @@ namespace Zoolandia
         }
         public virtual string Eat(int numberOfFoods)
         {
-            return "'Yum!'";
+            return "Yum!";
         }
         public void displayInfo()
         {
