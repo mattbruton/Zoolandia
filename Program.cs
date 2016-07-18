@@ -7,14 +7,9 @@ namespace Zoolandia
     {
         public static void Main(string[] args)
         {
-            AilurusFulgens pandaMan = new AilurusFulgens("Red Panda", 11, 2.3);
-            CanisLupusFamiliaris animal_One = new CanisLupusFamiliaris("Lunchbox", 13.75, 15.2);
-            Console.WriteLine(animal_One.Eat(4));
-            Console.WriteLine(pandaMan.Run());
-            MellivoraCapensis meanass = new MellivoraCapensis("Meanass", 30.2, 11.10);
-            pandaMan.displayInfo();
-            animal_One.displayInfo();
-            Console.WriteLine(meanass.Eat(2));
+            GuloGulo meanbutt = new GuloGulo("Marvin", 12.3, 12.3);
+            meanbutt.displayInfo();
+            Console.WriteLine(meanbutt.Eat(5));
         }
     }
 }
