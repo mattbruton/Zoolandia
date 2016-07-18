@@ -1,12 +1,13 @@
+using Zoolandia.Genera;
+
 namespace Zoolandia.Species
 {
-    public class CanisLupusFamiliaris : Animal, IAmbulatory
+    public class CanisLupusFamiliaris : Canis, IAmbulatory
     {
         public CanisLupusFamiliaris(string name, double height, double weight) : base(name, height, weight)
         {
             this.CommonName = "Domestic dog";
             this.ScientificName = "Canis lupus familiaris";
-            this.Genus = "Canis";
             this.PrimaryDiet = "Dog Chow";
         }
         public string Eat()
@@ -16,14 +17,6 @@ namespace Zoolandia.Species
         public override string Speak()
         {
             return "Bark! Bark!";
-        }
-        public string Walk()
-        {
-            return this.Name + " is walking.";
-        }
-        public string Run()
-        {
-            return this.Name + " is running!";
         }
     }
 }

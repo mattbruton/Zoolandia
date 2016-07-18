@@ -1,3 +1,5 @@
+using System;
+
 namespace Zoolandia
 {
     public class Animal 
@@ -22,6 +24,19 @@ namespace Zoolandia
         public virtual string Eat(int numberOfFoods)
         {
             return "'Yum!'";
+        }
+        public void displayInfo()
+        {
+            Console.WriteLine();
+            Console.WriteLine("Name: " + this.Name);
+            Console.WriteLine("Common Name: " + this.CommonName);
+            Console.WriteLine("Scientific Name: " + this.ScientificName);
+            Console.WriteLine("Genus: " + this.Genus);
+            Console.WriteLine("Height: " + this.Height + "in");
+            Console.WriteLine("Weight: " + this.Weight + "lbs");
+            Console.WriteLine("Primary Diet: " + this.PrimaryDiet);
+            Console.WriteLine("Sounds Like: " + this.Speak());
+            Console.WriteLine();
         }
     }
 }
