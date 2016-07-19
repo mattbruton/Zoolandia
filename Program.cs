@@ -10,6 +10,8 @@ namespace Zoolandia
             GuloGulo meanbutt = new GuloGulo("Marvin", 12.3, 12.3);
             meanbutt.displayInfo();
             Console.WriteLine(meanbutt.Eat(5));
+            MarmotaMonax asshole = new MarmotaMonax("Nacho", 8.9, 15.4);
+            asshole.displayInfo();
         }
     }
 }

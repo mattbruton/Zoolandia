@@ -2,7 +2,7 @@ using System;
 
 namespace Zoolandia
 {
-    public class Animal 
+    public abstract class Animal 
     {
         public Animal (string name, double height, double weight) 
         {
@@ -10,13 +10,13 @@ namespace Zoolandia
             this.Height = height;
             this.Weight = weight;
         }
+        public string Name {get; set;}
+        public double Weight {get; set;}
+        public double Height {get; set;}
         protected string PrimaryDiet;
         protected string Genus = null;
         protected string ScientificName = "Latin Words";
         public string CommonName = "Animal";
-        public string Name {get; set;}
-        public double Weight {get; set;}
-        public double Height {get; set;}
         public virtual string Speak()
         {
             return null;
