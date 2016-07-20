@@ -1,8 +1,6 @@
-using Zoolandia.Genera;
-
 namespace Zoolandia.Species
 {
-    public class MarmotaMonax : Marmota, IAmbulatory, IMarmota
+    public class MarmotaMonax : Animal, IAmbulatory, IMarmota
     {
         public MarmotaMonax(string name, double height, double weight) : base(name, height, weight)
         {
@@ -26,6 +24,14 @@ namespace Zoolandia.Species
         public bool BelongsToMarmota()
         {
             return true;
+        }
+        public string Walk()
+        {
+            return this.Name + " is walking.";
+        }
+        public string Run()
+        {
+            return this.Name + " is running!";
         }
     }
 }

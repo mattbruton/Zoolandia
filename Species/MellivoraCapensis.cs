@@ -1,8 +1,6 @@
-using Zoolandia.Genera;
-
 namespace Zoolandia.Species
 {
-    public class MellivoraCapensis : Mellivora, IAmbulatory, IMellivora
+    public class MellivoraCapensis : Animal, IAmbulatory, IMellivora
     {
         public MellivoraCapensis(string name, double height, double weight) : base(name, height, weight)
         {
@@ -30,6 +28,14 @@ namespace Zoolandia.Species
         public bool BelongsToMellivora()
         {
             return true;
+        }
+        public string Walk()
+        {
+            return this.Name + " is walking.";
+        }
+        public string Run()
+        {
+            return this.Name + " is running!";
         }
     }
 }

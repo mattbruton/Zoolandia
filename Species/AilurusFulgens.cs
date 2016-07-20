@@ -1,8 +1,6 @@
-using Zoolandia.Genera;
-
 namespace Zoolandia.Species
 {
-    public class AilurusFulgens : Ailurus, IAmbulatory, IAilurus
+    public class AilurusFulgens : Animal, IAmbulatory, IAilurus
     {
         public AilurusFulgens (string name, double height, double weight) : base(name, height, weight) 
         {
@@ -38,6 +36,14 @@ namespace Zoolandia.Species
         public bool BelongsToAilurus()
         {
             return true;
+        }
+        public string Walk()
+        {
+            return this.Name + " is walking.";
+        }
+        public string Run()
+        {
+            return this.Name + " is running!";
         }
     }
 }

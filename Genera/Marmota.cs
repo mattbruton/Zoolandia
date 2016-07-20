@@ -1,18 +1,9 @@
+using System.Collections.Generic;
+
 namespace Zoolandia.Genera
 {
-    public abstract class Marmota : Animal, IAmbulatory
+    public class Marmota
     {
-        public Marmota (string name, double height, double weight) : base(name, height, weight) 
-        {
-            this.Genus = "Marmota";
-        }
-        public string Walk()
-        {
-            return this.Name + " is walking.";
-        }
-        public string Run()
-        {
-            return this.Name + " is running!";
-        }
+        public List<IMarmota> MarmotaGenus {get; set;}
     }
 }
