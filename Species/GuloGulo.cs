@@ -2,10 +2,11 @@ using Zoolandia.Genera;
 
 namespace Zoolandia.Species
 {
-    public class GuloGulo : Gulo, IAmbulatory
+    public class GuloGulo : Gulo, IAmbulatory, IGulo
     {
         public GuloGulo(string name, double height, double weight) : base(name, height, weight)
-        {
+        {   
+            this.Genus = "Gulo";
             this.CommonName = "Wolverine";
             this.ScientificName = "Gulo gulo";
             this.PrimaryDiet = "Small mammals";
@@ -25,6 +26,10 @@ namespace Zoolandia.Species
         public override string Speak() 
         {
             return this.Name + " makes a string of unintelligible, demon noises.";
+        }
+        public bool BelongsToGulo()
+        {
+            return true;
         }
     }
 }

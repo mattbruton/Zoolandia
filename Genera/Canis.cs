@@ -1,18 +1,9 @@
+using System.Collections.Generic;
+
 namespace Zoolandia.Genera
 {
-    public class Canis : Animal, IAmbulatory
+     public class Canis
     {
-        public Canis (string name, double height, double weight) : base(name, height, weight) 
-        {
-            this.Genus = "Canis";
-        }
-        public string Walk()
-        {
-            return this.Name + " is walking.";
-        }
-        public string Run()
-        {
-            return this.Name + " is running!";
-        }
+        public List<ICanis> CanisGenus {get; set;}
     }
 }

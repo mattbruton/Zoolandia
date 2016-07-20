@@ -1,6 +1,6 @@
 namespace Zoolandia.Genera
 {
-    public class Mellivora : Animal, IAmbulatory
+    public abstract class Mellivora : Animal, IAmbulatory
     {
         public Mellivora (string name, double height, double weight) : base(name, height, weight) 
         {

@@ -1,6 +1,6 @@
 namespace Zoolandia.Genera
 {
-    public class Gulo : Animal, IAmbulatory
+    public abstract class Gulo : Animal, IAmbulatory
     {
         public Gulo (string name, double height, double weight) : base(name, height, weight) 
         {

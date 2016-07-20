@@ -1,10 +1,10 @@
 namespace Zoolandia.Genera
 {
-    public class Giraffa : Animal, IAmbulatory
+    public abstract class Giraffa : Animal, IAmbulatory
     {
         public Giraffa (string name, double height, double weight) : base(name, height, weight) 
         {
-            this.Genus = "Giraffa";
+            this.Genus = "Giraffe";
         }
         public string Walk()
         {

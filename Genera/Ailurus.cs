@@ -1,6 +1,6 @@
 namespace Zoolandia.Genera
 {
-    public class Ailurus : Animal, IAmbulatory
+    public abstract class Ailurus : Animal, IAmbulatory
     {
         public Ailurus (string name, double height, double weight) : base(name, height, weight) 
         {

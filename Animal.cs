@@ -11,12 +11,12 @@ namespace Zoolandia
             this.Weight = weight;
         }
         public string Name {get; set;}
+        public string CommonName {get; set;}
+        protected string ScientificName {get; set;}
+        protected string Genus {get; set;}
         public double Weight {get; set;}
         public double Height {get; set;}
-        protected string PrimaryDiet;
-        protected string Genus = null;
-        protected string ScientificName = "Latin Words";
-        public string CommonName = "Animal";
+        protected string PrimaryDiet {get; set;}
         public virtual string Speak()
         {
             return null;

@@ -1,6 +1,6 @@
 namespace Zoolandia.Genera
 {
-    public class Marmota : Animal, IAmbulatory
+    public abstract class Marmota : Animal, IAmbulatory
     {
         public Marmota (string name, double height, double weight) : base(name, height, weight) 
         {

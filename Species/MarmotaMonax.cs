@@ -2,10 +2,11 @@ using Zoolandia.Genera;
 
 namespace Zoolandia.Species
 {
-    public class MarmotaMonax : Marmota, IAmbulatory
+    public class MarmotaMonax : Marmota, IAmbulatory, IMarmota
     {
         public MarmotaMonax(string name, double height, double weight) : base(name, height, weight)
         {
+            this.Genus = "Marmota";
             this.CommonName = "Groundhog";
             this.ScientificName = "Marmota monax";
             this.PrimaryDiet = "Air conditioning units";
@@ -21,6 +22,10 @@ namespace Zoolandia.Species
         public override string Speak()
         {
             return this.Name + " makes a whistling noise.";
+        }
+        public bool BelongsToMarmota()
+        {
+            return true;
         }
     }
 }
