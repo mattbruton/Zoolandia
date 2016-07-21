@@ -15,7 +15,7 @@ namespace Zoolandia.Species
 
         public override string Eat(int numberOfFoods)
         {
-            return this.Name + " grazes for " + numberOfFoods + " minutes.";
+            return base.Eat(numberOfFoods) + " " + this.Name + " grazes for " + numberOfFoods + " minutes.";
         }
         public string Eat()
         {

@@ -18,7 +18,7 @@ namespace Zoolandia
 
             pandaman.AverageWeight = 90;
             Console.WriteLine(pandaman.Eat(12));
-            
+            Console.WriteLine(dog.Eat(4));
             giraffe.displayInfo();
             List<Gulo> GuloList = new List<Gulo>();
             GuloList.Add(meanbutt);
