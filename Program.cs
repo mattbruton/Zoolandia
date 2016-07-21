@@ -9,9 +9,9 @@ namespace Zoolandia
     {
         public static void Main(string[] args)
         {   
-            
+            GiraffaCamelopardalis giraffe = new GiraffaCamelopardalis("Mr. Giraffe");
             GuloGulo meanbutt = new GuloGulo("Marvin");
-            meanbutt.displayInfo();
+            giraffe.displayInfo();
             List<Gulo> GuloList = new List<Gulo>();
             GuloList.Add(meanbutt);
             Console.WriteLine(GuloList.Count);

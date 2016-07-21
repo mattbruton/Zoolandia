@@ -15,15 +15,15 @@ namespace Zoolandia.Species
 
         public override string Eat(int numberOfFoods)
         {
-            return "";
+            return this.Name + " grazes for " + numberOfFoods + " minutes.";
         }
         public string Eat()
         {
-            return "";
+            return this.Name + " eats "+ this.PrimaryDiet + " from the nearest tree.";
         }
         public override string Speak()
         {
-            return "";
+            return "-silence-";
         }
         public string Walk()
         {
