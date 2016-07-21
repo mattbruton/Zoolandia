@@ -1,9 +1,10 @@
-using System.Collections.Generic;
-
 namespace Zoolandia.Genera
 {
-     public class Ailurus
+    public abstract class Ailurus : Animal
     {
-        public List<IAilurus> AilurusGenus {get; set;}
+          public Ailurus (string name) : base(name) 
+          {
+              this.Genus = "Ailurus";
+          }
     }
 }

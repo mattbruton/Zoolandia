@@ -1,13 +1,16 @@
+using Zoolandia.Genera;
+
 namespace Zoolandia.Species
 {
-    public class AilurusFulgens : Animal, IAmbulatory, IAilurus
+    public class AilurusFulgens : Ailurus, IAmbulatory
     {
-        public AilurusFulgens (string name, double height, double weight) : base(name, height, weight) 
+        public AilurusFulgens (string name) : base(name) 
         {
-            this.Genus = "Ailurus";
             this.CommonName = "Red panda";
             this.ScientificName = "Ailurus fulgens";
             this.PrimaryDiet = "Bamboo";
+            this.AverageWeight = 11;
+            this.AverageHeight = 10.3;
         }
         public override string Eat(int numberOfFoods) 
         {
@@ -32,10 +35,6 @@ namespace Zoolandia.Species
         public override string Speak() 
         {
             return "Yiff! Yiff!";
-        }
-        public bool BelongsToAilurus()
-        {
-            return true;
         }
         public string Walk()
         {

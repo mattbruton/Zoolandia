@@ -1,13 +1,16 @@
+using Zoolandia.Genera;
+
 namespace Zoolandia.Species
 {
-    public class GiraffaCamelopardalis : Animal, IAmbulatory, IGiraffa
+    public class GiraffaCamelopardalis : Giraffa, IAmbulatory
     {
-        public GiraffaCamelopardalis(string name, double height, double weight) : base(name, height, weight)
+        public GiraffaCamelopardalis(string name) : base(name)
         {
-            this.Genus = "Giraffa";
             this.CommonName = "Giraffe";
             this.ScientificName = "Giraffa camelopardalis";
             this.PrimaryDiet = "Acacia leaves";
+            this.AverageWeight = 2200;
+            this.AverageHeight = 204.0;
         }
 
         public override string Eat(int numberOfFoods)
@@ -21,10 +24,6 @@ namespace Zoolandia.Species
         public override string Speak()
         {
             return "";
-        }
-        public bool BelongsToGiraffa()
-        {
-            return true;
         }
         public string Walk()
         {

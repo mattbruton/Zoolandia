@@ -1,13 +1,16 @@
+using Zoolandia.Genera;
+
 namespace Zoolandia.Species
 {
-    public class MarmotaMonax : Animal, IAmbulatory, IMarmota
+    public class MarmotaMonax : Marmota, IAmbulatory
     {
-        public MarmotaMonax(string name, double height, double weight) : base(name, height, weight)
+        public MarmotaMonax(string name) : base(name)
         {
-            this.Genus = "Marmota";
             this.CommonName = "Groundhog";
             this.ScientificName = "Marmota monax";
             this.PrimaryDiet = "Air conditioning units";
+            this.AverageWeight = 9;
+            this.AverageHeight = 9.5;
         }
         public override string Eat(int numberOfFoods)
         {
@@ -20,10 +23,6 @@ namespace Zoolandia.Species
         public override string Speak()
         {
             return this.Name + " makes a whistling noise.";
-        }
-        public bool BelongsToMarmota()
-        {
-            return true;
         }
         public string Walk()
         {

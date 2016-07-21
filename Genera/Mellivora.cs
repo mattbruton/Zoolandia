@@ -1,9 +1,10 @@
-using System.Collections.Generic;
-
 namespace Zoolandia.Genera
 {
-    public class Mellivora
+    public abstract class Mellivora : Animal
     {
-        public List<IMellivora> MellivoraGenus {get; set;}
+          public Mellivora (string name) : base(name) 
+          {
+              this.Genus = "Mellivora";
+          }
     }
 }

@@ -1,13 +1,16 @@
+using Zoolandia.Genera;
+
 namespace Zoolandia.Species
 {
-    public class MellivoraCapensis : Animal, IAmbulatory, IMellivora
+    public class MellivoraCapensis : Mellivora, IAmbulatory
     {
-        public MellivoraCapensis(string name, double height, double weight) : base(name, height, weight)
+        public MellivoraCapensis(string name) : base(name)
         {
-            this.Genus = "Mellivora";
             this.CommonName = "Honey badger";
             this.ScientificName = "Mellivora capensis";
             this.PrimaryDiet = "Bee honey";
+            this.AverageWeight = 20;
+            this.AverageHeight = 11.0;
         }
         public string Eat()
         {
@@ -24,10 +27,6 @@ namespace Zoolandia.Species
         public override string Speak() 
         {
             return "Khrya-ya-ya-ya";
-        }
-        public bool BelongsToMellivora()
-        {
-            return true;
         }
         public string Walk()
         {

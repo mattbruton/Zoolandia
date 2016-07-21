@@ -1,9 +1,10 @@
-using System.Collections.Generic;
-
 namespace Zoolandia.Genera
 {
-    public class Giraffa
+    public abstract class Giraffa : Animal
     {
-        public List<IGiraffa> GiraffaGenus {get; set;}
+          public Giraffa (string name) : base(name) 
+          {
+              this.Genus = "Giraffa";
+          }
     }
 }
