@@ -1,24 +1,22 @@
 ﻿using System;
+using System.Collections.Generic;
 using Zoolandia.Species;
+using Zoolandia.Genera;
 
 namespace Zoolandia
 {
     public class Program
     {
         public static void Main(string[] args)
-        {
-
-            Animal animal = new Animal("Steve");
-            string response = animal.Eat(5);
-            Console.WriteLine(animal.Name + " says " + response);
-
-            AilurusFulgens pandaMan = new AilurusFulgens("Red Panda");
-            pandaMan.Name = "Mr. Pand A. Redd";
-            Console.WriteLine(pandaMan.Name + " exclaimed " + pandaMan.Eat(12));
-            Console.WriteLine(pandaMan.Name + " said " + pandaMan.Eat());
-            Console.WriteLine("My name is now " + pandaMan.Welcome("Bob Sagat"));
-
-
+        {   
+            GiraffaCamelopardalis giraffe = new GiraffaCamelopardalis("Mr. Giraffe");
+            GuloGulo meanbutt = new GuloGulo("Marvin");
+            MarmotaMonax groundhog = new MarmotaMonax("Cpt. Whiskers");
+            giraffe.displayInfo();
+            List<Gulo> GuloList = new List<Gulo>();
+            GuloList.Add(meanbutt);
+            Console.WriteLine(GuloList.Count);
+            Console.WriteLine(groundhog.Murder());
         }
     }
 }
