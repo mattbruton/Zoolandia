@@ -18,7 +18,7 @@ namespace Zoolandia.Species
         }
         public override string Eat(int numberOfFoods)
         {
-            return this.Name + " says: '" + base.Eat(1) + " Thanks, I guess.'";
+            return this.Name + " says: '" + base.Eat(numberOfFoods) + " Thanks, I guess.'";
         }
         public override string Speak() 
         {

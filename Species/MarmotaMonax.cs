@@ -14,7 +14,7 @@ namespace Zoolandia.Species
         }
         public override string Eat(int numberOfFoods)
         {
-            return this.Name + " devours " + numberOfFoods.ToString() + " local pets.";
+            return base.Eat(numberOfFoods) + " " + this.Name + " devours " + numberOfFoods.ToString() + " local pets.";
         }
         public string Eat()
         {
