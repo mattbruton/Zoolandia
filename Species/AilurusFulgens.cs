@@ -44,5 +44,9 @@ namespace Zoolandia.Species
         {
             return this.Name + " is running!";
         }
+        public int RemainingPopulation()
+        {
+            return 10000;
+        }
     }
 }

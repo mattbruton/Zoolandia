@@ -32,5 +32,9 @@ namespace Zoolandia.Species
         {
             return this.Name + " is running!";
         }
+        public string Murder()
+        {
+            return this.Name + " murders the nearest neighborhood pet.";
+        }
     }
 }

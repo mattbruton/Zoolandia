@@ -33,5 +33,9 @@ namespace Zoolandia.Species
         {
             return this.Name + " is running!";
         }
+        public bool IsMansBestFriend()
+        {
+            return true;
+        }
     }
 }

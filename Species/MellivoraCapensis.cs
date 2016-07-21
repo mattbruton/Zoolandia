@@ -20,10 +20,6 @@ namespace Zoolandia.Species
         {
             return this.Name + " says: '" + base.Eat(1) + " Thanks, I guess.'";
         }
-        public string Care()
-        {
-            return this.Name + ", the " + this.CommonName + " don't care.";
-        }
         public override string Speak() 
         {
             return "Khrya-ya-ya-ya";
@@ -35,6 +31,10 @@ namespace Zoolandia.Species
         public string Run()
         {
             return this.Name + " is running!";
+        }
+        public string Care()
+        {
+            return this.Name + ", the " + this.CommonName + " don't care.";
         }
     }
 }
