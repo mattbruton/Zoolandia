@@ -4,7 +4,22 @@ namespace Zoolandia.Species
 {
     public class AilurusFulgens : Ailurus, IAmbulatory
     {
-        public AilurusFulgens (string name) : base(name) 
+        public AilurusFulgens (string name)
+            : base(name) 
+        {
+            SetAilurusFulgensInfo();
+        }
+        public AilurusFulgens (int age) 
+            : base(age)
+        {
+            SetAilurusFulgensInfo();
+        }
+        public AilurusFulgens (string name, int age)
+            : base(name, age)
+        {
+            SetAilurusFulgensInfo();
+        }
+        private void SetAilurusFulgensInfo()
         {
             this.CommonName = "Red panda";
             this.ScientificName = "Ailurus fulgens";

@@ -4,7 +4,22 @@ namespace Zoolandia.Species
 {
     public class CanisLupusFamiliaris : Canis, IAmbulatory
     {
-        public CanisLupusFamiliaris(string name) : base(name)
+        public CanisLupusFamiliaris(string name)
+            : base(name)
+        {
+            SetBaseCanisLupusFamiliarisInfo();
+        }
+        public CanisLupusFamiliaris(int age) 
+            : base(age) 
+        {
+            SetBaseCanisLupusFamiliarisInfo();
+        }
+        public CanisLupusFamiliaris(string name, int age) 
+            : base(name, age)
+        {
+            SetBaseCanisLupusFamiliarisInfo();
+        }
+        private void SetBaseCanisLupusFamiliarisInfo()
         {
             this.CommonName = "Domestic dog";
             this.ScientificName = "Canis lupus familiaris";

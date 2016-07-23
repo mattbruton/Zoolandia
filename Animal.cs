@@ -4,11 +4,22 @@ namespace Zoolandia
 {
     public abstract class Animal 
     {
+        public Animal() {}
         public Animal (string name) 
         {
             this.Name = name;
         }
+        public Animal (int age)
+        {
+            this.Age = age;
+        }
+        public Animal (string name, int age)
+        {
+            this.Name = name;
+            this.Age = age;
+        }
         public string Name {get; set;}
+        public int Age {get; set;}
         public string CommonName {get; set;}
         protected string ScientificName {get; set;}
         protected string Genus {get; set;}

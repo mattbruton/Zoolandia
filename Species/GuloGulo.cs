@@ -4,8 +4,23 @@ namespace Zoolandia.Species
 {
     public class GuloGulo : Gulo, IAmbulatory
     {
-        public GuloGulo(string name) : base(name)
+        public GuloGulo(string name)
+            : base(name)
         {   
+            SetGuloGuloInfo();
+        }
+        public GuloGulo(int age)
+            : base(age)
+        {   
+            SetGuloGuloInfo();
+        }
+        public GuloGulo(string name, int age)
+            : base(name, age)
+        {   
+            SetGuloGuloInfo();
+        }
+        private void SetGuloGuloInfo()
+        {
             this.CommonName = "Wolverine";
             this.ScientificName = "Gulo gulo";
             this.PrimaryDiet = "Small mammals";

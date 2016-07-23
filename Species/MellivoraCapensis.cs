@@ -4,7 +4,22 @@ namespace Zoolandia.Species
 {
     public class MellivoraCapensis : Mellivora, IAmbulatory
     {
-        public MellivoraCapensis(string name) : base(name)
+        public MellivoraCapensis(string name)
+            : base(name)
+        {
+            SetMellivoraCapensisInfo();
+        }
+        public MellivoraCapensis(int age)
+            : base(age)
+        {
+            SetMellivoraCapensisInfo();
+        }
+        public MellivoraCapensis(string name, int age)
+            : base(name, age)
+        {
+            SetMellivoraCapensisInfo();
+        }
+        private void SetMellivoraCapensisInfo()
         {
             this.CommonName = "Honey badger";
             this.ScientificName = "Mellivora capensis";

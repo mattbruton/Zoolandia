@@ -4,7 +4,22 @@ namespace Zoolandia.Species
 {
     public class MarmotaMonax : Marmota, IAmbulatory
     {
-        public MarmotaMonax(string name) : base(name)
+        public MarmotaMonax(string name)
+            : base(name)
+        {
+            SetMarmotaMonaxInfo();
+        }
+        public MarmotaMonax(int age)
+            : base(age)
+        {
+            SetMarmotaMonaxInfo();
+        }
+        public MarmotaMonax(string name, int age)
+            : base(name, age)
+        {
+            SetMarmotaMonaxInfo();
+        }
+        private void SetMarmotaMonaxInfo()
         {
             this.CommonName = "Groundhog";
             this.ScientificName = "Marmota monax";
