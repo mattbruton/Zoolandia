@@ -1,6 +1,6 @@
 namespace Zoolandia.Genera
 {
-    public class Bombina : Animal
+    public abstract class Bombina : Animal
     {
         public Bombina(string name) 
             : base(name)
