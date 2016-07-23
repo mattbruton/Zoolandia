@@ -1,10 +1,8 @@
 namespace Zoolandia
 {
-    public interface IAmphibious
+    public interface IAquatic
     {
         string Swim();
         string Float();
-        string Walk();
-        string Run();
     }
 }
