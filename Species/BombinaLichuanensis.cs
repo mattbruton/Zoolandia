@@ -2,7 +2,7 @@ using Zoolandia.Genera;
 
 namespace Zoolandia.Species
 {
-    public class BombinaLichuanensis : Bombina, IAmphibious
+    public class BombinaLichuanensis : Bombina, IAquatic, IJumping
     {
         public BombinaLichuanensis(string name)
             : base(name)
@@ -39,13 +39,9 @@ namespace Zoolandia.Species
         {
             return "Ribbit ribbit.";
         }
-        public string Walk()
+        public string Hop()
         {
-            return this.Name + " is walking.";
-        }
-        public string Run()
-        {
-            return this.Name + " is running!";
+            return this.Name + " hops forward.";
         }
         public string Swim()
         {
