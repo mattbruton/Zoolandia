@@ -15,11 +15,12 @@ namespace Zoolandia
             MellivoraCapensis honeyBadger = new MellivoraCapensis("Facemuncher");
             GuloGulo meanbutt = new GuloGulo("Marvin");
             AilurusFulgens pandaman = new AilurusFulgens("Red");
-
+            CanisLupusFamiliaris testanimal = new CanisLupusFamiliaris("Lunchbox", 4);
             pandaman.AverageWeight = 90;
             Console.WriteLine(pandaman.Eat(12));
             Console.WriteLine(dog.Eat(4));
-            giraffe.displayInfo();
+            testanimal.displayInfo();
+            meanbutt.displayInfo();
             List<Gulo> GuloList = new List<Gulo>();
             GuloList.Add(meanbutt);
             Console.WriteLine(GuloList.Count);
