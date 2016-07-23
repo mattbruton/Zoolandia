@@ -29,7 +29,7 @@ namespace Zoolandia.Species
         }
         public string Eat()
         {
-            return this.Name + " chews on a small rat.";
+            return this.Name + " chews on a small grape.";
         }
         public override string Eat(int numberOfFoods)
         {
