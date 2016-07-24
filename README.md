@@ -1,7 +1,7 @@
 # Zoolandia
 
 NSS Evening Cohort 3 exercise to develop skills with C# and Object Oriented Programming. Initial goals within the project are to
-explore inheritance and polymorphism by creating a zoo of sorts to branch from the concept of a generic animal towards genus, then to species.
+explore inheritance, encapsulation, abstraction, and polymorphism by creating a zoo of sorts to branch from the concept of a generic animal towards genus, then to species. From there, animals must be placed within proper habitats.
 
 
 ## Tech and Tools Involved
