@@ -24,13 +24,14 @@ namespace Zoolandia
             Console.WriteLine(dog.Eat(4));
             ribbitman.displayInfo();
             meanbutt.displayInfo();
-            Habitat Savannah =  new Habitat();
-            Savannah.inhabitants.Add(meanbutt);
-            Savannah.inhabitants.Add(ribbitman);
+            Forest sherwood =  new Forest("Sherwood Forest");
+            sherwood.inhabitants.Add(meanbutt);
+            sherwood.inhabitants.Add(ribbitman);
 
-            foreach (var animal in Savannah.inhabitants)
+            Console.WriteLine("Habitat : {0}", sherwood.Name);
+            foreach (var animal in sherwood.inhabitants)
             {
-                Console.WriteLine(animal.Name.ToString());
+                Console.WriteLine("   {0} the {1}",animal.Name.ToString(), animal.CommonName.ToString());
             }
             List<Gulo> GuloList = new List<Gulo>();
             GuloList.Add(meanbutt);
