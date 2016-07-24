@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using Zoolandia.Animals;
 using Zoolandia.Animals.Species;
 using Zoolandia.Animals.Genera;
 using Zoolandia.Habitats;
@@ -26,6 +25,7 @@ namespace Zoolandia
             ribbitman.displayInfo();
             meanbutt.displayInfo();
             Forest sherwood =  new Forest("Sherwood Forest");
+            Ocean pacific = new Ocean("Pacific Ocean");
             sherwood.inhabitants.Add(meanbutt);
             sherwood.inhabitants.Add(ribbitman);
 
@@ -40,6 +40,9 @@ namespace Zoolandia
             GuloList.Add(meanbutt);
             Console.WriteLine(GuloList.Count);
             Console.WriteLine(groundhog.Murder());
+            Console.WriteLine(pacific.BetterCheck());
+            pacific.WetterCheck();
+            Console.WriteLine(pacific.BetterCheck());
         }
     }
 }
