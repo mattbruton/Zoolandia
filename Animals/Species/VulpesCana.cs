@@ -1,6 +1,6 @@
-using Zoolandia.Genera;
+using Zoolandia.Animals.Genera;
 
-namespace Zoolandia.Species
+namespace Zoolandia.Animals.Species
 {
     public class VulpesCana : Vulpes, IAmbulatory, IJumping
     {

@@ -1,35 +1,35 @@
-using Zoolandia.Genera;
+using Zoolandia.Animals.Genera;
 
-namespace Zoolandia.Species
+namespace Zoolandia.Animals.Species
 {
-    public class BombinaOrientalis : Bombina, IAquatic, IJumping
+    public class BombinaLichuanensis : Bombina, IAquatic, IJumping
     {
-        public BombinaOrientalis(string name)
+        public BombinaLichuanensis(string name)
             : base(name)
         {
-            SetBombinaOrientalisInfo();
+            SetBombinaLichuanensisInfo();
         }
-        public BombinaOrientalis(int age)
+        public BombinaLichuanensis(int age)
             : base(age)
         {
-            SetBombinaOrientalisInfo();
+            SetBombinaLichuanensisInfo();
         }
-        public BombinaOrientalis(string name, int age)
+        public BombinaLichuanensis(string name, int age)
             : base(name, age)
         {
-            SetBombinaOrientalisInfo();
+            SetBombinaLichuanensisInfo();
         }
-        private void SetBombinaOrientalisInfo()
+        private void SetBombinaLichuanensisInfo()
         {
-            this.CommonName = "Oriental fire-bellied toad";
-            this.ScientificName = "Bombina orientalis";
+            this.CommonName = "Lichuan bell toad";
+            this.ScientificName = "Bombina lichuanensis";
             this.PrimaryDiet = "Insects";
             this.AverageWeight = 1;
             this.AverageHeight = 1.0;
         }
         public string Eat()
         {
-            return this.Name + " munches on some insects, but not mealworms. He has a hard time digesting those!";
+            return this.Name + " munches on some insects";
         }
         public override string Eat(int numberOfFoods)
         {

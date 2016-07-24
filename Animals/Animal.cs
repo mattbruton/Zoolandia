@@ -1,6 +1,6 @@
 using System;
 
-namespace Zoolandia
+namespace Zoolandia.Animals
 {
     public abstract class Animal 
     {
