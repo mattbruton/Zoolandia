@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using Zoolandia.Animals.Species;
-using Zoolandia.Animals.Genera;
 using Zoolandia.Habitats;
 
 namespace Zoolandia
@@ -32,21 +31,66 @@ namespace Zoolandia
             Ocean pacific = new Ocean("Pacific Ocean");
             Jungle wildass = new Jungle("Wildass Jungle");
             Mountain olympus = new Mountain("Mt. Olympus");
-            
-            List<Habitat> places = new List<Habitat>();
-            Console.WriteLine(wildass.Welcome());
-            sherwood.inhabitants.Add(meanbutt);
-            sherwood.inhabitants.Add(ribbitman);
 
-            Console.WriteLine("Habitat : {0}", sherwood.Name);
-            foreach (var animal in sherwood.inhabitants)
-            {
-                Console.WriteLine("   {0} the {1}", animal.Name.ToString(), animal.CommonName.ToString());
-            }
+            // Add animals to Ocean inhabitants list.
+            pacific.inhabitants.Add(shark);
+            pacific.inhabitants.Add(birdgirl);
+            pacific.inhabitants.Add(birdman);
+
+            // Add animals to Jungle inhabitants list.
+            wildass.inhabitants.Add(giraffe);
+            wildass.inhabitants.Add(pandaman);
+            wildass.inhabitants.Add(meanbutt);
+            wildass.inhabitants.Add(starfox);
+
+            // Add animals to Forest inhabitants list.
+            sherwood.inhabitants.Add(groundhog);
+            sherwood.inhabitants.Add(honeyBadger);
+            sherwood.inhabitants.Add(dog);
+            sherwood.inhabitants.Add(snek);
+            sherwood.inhabitants.Add(foxwoman);
+
+            // Add animals to Mountain inhabitants list.
+            olympus.inhabitants.Add(ribbitlady);
+            olympus.inhabitants.Add(ribbitman);
+            olympus.inhabitants.Add(sonOfRibbit);
+
+            // Add all instantiated habitats to a list.
+            List<Habitat> places = new List<Habitat>();
+            places.Add(sherwood);
+            places.Add(olympus);
+            places.Add(pacific);
+            places.Add(wildass);
+
             
-            Console.WriteLine(pacific.BetterCheck());
-            pacific.WetterCheck();
-            Console.WriteLine(pacific.BetterCheck());
+
+            // Console.WriteLine("Habitat : {0}", sherwood.Name);
+            // foreach (var animal in sherwood.inhabitants)
+            // {
+            //     Console.WriteLine("   {0} the {1}", animal.Name.ToString(), animal.CommonName.ToString());
+            // }
+            // Console.WriteLine();
+
+            // Console.WriteLine("Habitat : {0}", olympus.Name);
+            // foreach (var animal in olympus.inhabitants)
+            // {
+            //     Console.WriteLine("   {0} the {1}", animal.Name.ToString(), animal.CommonName.ToString());
+            // }
+            // Console.WriteLine();
+
+            // Console.WriteLine("Habitat : {0}", wildass.Name);
+            // foreach (var animal in wildass.inhabitants)
+            // {
+            //     Console.WriteLine("   {0} the {1}", animal.Name.ToString(), animal.CommonName.ToString());
+            // }
+            // Console.WriteLine();
+
+            // Console.WriteLine("Habitat : {0}", pacific.Name);
+            // foreach (var animal in pacific.inhabitants)
+            // {
+            //     Console.WriteLine("   {0} the {1}", animal.Name.ToString(), animal.CommonName.ToString());
+            // }
+            // Console.WriteLine();
         }
     }
 }
