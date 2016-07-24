@@ -3,9 +3,11 @@ using System.Collections.Generic;
 
 namespace Zoolandia.Habitats
 {
-    public class Habitat
+    public abstract class Habitat
     {
+        public Habitat() {}
         public List<Animal> inhabitants = new List<Animal>();
-        public string public_name { get; }
+        public string Name { get; set; }
+        public string Climate { get; set; }
     }
 }
