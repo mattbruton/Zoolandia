@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Zoolandia.Species;
 using Zoolandia.Genera;
+using Zoolandia.Habitats;
 
 namespace Zoolandia
 {
@@ -23,6 +24,17 @@ namespace Zoolandia
             Console.WriteLine(dog.Eat(4));
             ribbitman.displayInfo();
             meanbutt.displayInfo();
+            Forest sherwood =  new Forest("Sherwood Forest");
+            sherwood.inhabitants.Add(meanbutt);
+            sherwood.inhabitants.Add(ribbitman);
+
+            Console.WriteLine("Habitat : {0}", sherwood.Name);
+            foreach (var animal in sherwood.inhabitants)
+            {
+                Console.WriteLine("   {0} the {1}", animal.Name.ToString(), animal.CommonName.ToString());
+            }
+            sherwood.SetForestFire();
+            Console.WriteLine(sherwood.HasExtremeClimate.ToString());
             List<Gulo> GuloList = new List<Gulo>();
             GuloList.Add(meanbutt);
             Console.WriteLine(GuloList.Count);
