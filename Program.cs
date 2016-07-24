@@ -26,6 +26,8 @@ namespace Zoolandia
             meanbutt.displayInfo();
             Forest sherwood =  new Forest("Sherwood Forest");
             Ocean pacific = new Ocean("Pacific Ocean");
+            Jungle wildass = new Jungle("Wildass Jungle");
+            Console.WriteLine(wildass.Welcome());
             sherwood.inhabitants.Add(meanbutt);
             sherwood.inhabitants.Add(ribbitman);
 

@@ -7,5 +7,9 @@ namespace Zoolandia.Habitats
         {
             this.HasExtremeClimate = true;
         }
+        public string Welcome()
+        {
+            return "Welcome to the " + this.Name + ".";
+        }
     }
 }
