@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Zoolandia.Species;
 using Zoolandia.Genera;
+using Zoolandia.Habitats;
 
 namespace Zoolandia
 {
@@ -23,6 +24,14 @@ namespace Zoolandia
             Console.WriteLine(dog.Eat(4));
             ribbitman.displayInfo();
             meanbutt.displayInfo();
+            Habitat Savannah =  new Habitat();
+            Savannah.inhabitants.Add(meanbutt);
+            Savannah.inhabitants.Add(ribbitman);
+
+            foreach (var animal in Savannah.inhabitants)
+            {
+                Console.WriteLine(animal.Name.ToString());
+            }
             List<Gulo> GuloList = new List<Gulo>();
             GuloList.Add(meanbutt);
             Console.WriteLine(GuloList.Count);

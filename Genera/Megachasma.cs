@@ -1,4 +1,4 @@
-namespace Zoolandia.Genera;
+namespace Zoolandia.Genera
 {
     public abstract class Megachasma : Animal
     {
