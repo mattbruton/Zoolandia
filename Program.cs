@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using Zoolandia.Species;
-using Zoolandia.Genera;
+using Zoolandia.Animals;
+using Zoolandia.Animals.Species;
+using Zoolandia.Animals.Genera;
 using Zoolandia.Habitats;
 
 namespace Zoolandia

@@ -1,4 +1,4 @@
-namespace Zoolandia.Genera
+namespace Zoolandia.Animals.Genera
 {
     public abstract class Ailurus : Animal
     {
