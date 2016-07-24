@@ -31,8 +31,10 @@ namespace Zoolandia
             Console.WriteLine("Habitat : {0}", sherwood.Name);
             foreach (var animal in sherwood.inhabitants)
             {
-                Console.WriteLine("   {0} the {1}",animal.Name.ToString(), animal.CommonName.ToString());
+                Console.WriteLine("   {0} the {1}", animal.Name.ToString(), animal.CommonName.ToString());
             }
+            sherwood.SetForestFire();
+            Console.WriteLine(sherwood.HasExtremeClimate.ToString());
             List<Gulo> GuloList = new List<Gulo>();
             GuloList.Add(meanbutt);
             Console.WriteLine(GuloList.Count);
