@@ -62,35 +62,15 @@ namespace Zoolandia
             places.Add(pacific);
             places.Add(wildass);
 
-            
-
-            // Console.WriteLine("Habitat : {0}", sherwood.Name);
-            // foreach (var animal in sherwood.inhabitants)
-            // {
-            //     Console.WriteLine("   {0} the {1}", animal.Name.ToString(), animal.CommonName.ToString());
-            // }
-            // Console.WriteLine();
-
-            // Console.WriteLine("Habitat : {0}", olympus.Name);
-            // foreach (var animal in olympus.inhabitants)
-            // {
-            //     Console.WriteLine("   {0} the {1}", animal.Name.ToString(), animal.CommonName.ToString());
-            // }
-            // Console.WriteLine();
-
-            // Console.WriteLine("Habitat : {0}", wildass.Name);
-            // foreach (var animal in wildass.inhabitants)
-            // {
-            //     Console.WriteLine("   {0} the {1}", animal.Name.ToString(), animal.CommonName.ToString());
-            // }
-            // Console.WriteLine();
-
-            // Console.WriteLine("Habitat : {0}", pacific.Name);
-            // foreach (var animal in pacific.inhabitants)
-            // {
-            //     Console.WriteLine("   {0} the {1}", animal.Name.ToString(), animal.CommonName.ToString());
-            // }
-            // Console.WriteLine();
+            foreach (Habitat place in places)
+            {
+                Console.WriteLine("Habitat : {0}", place.Name);
+                foreach (var inhabitant in place.inhabitants)
+                {
+                    Console.WriteLine("    {0} the {1}", inhabitant.Name.ToString(), inhabitant.CommonName.ToString());
+                }
+                Console.WriteLine();
+            }
         }
     }
 }
