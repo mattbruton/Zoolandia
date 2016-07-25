@@ -67,7 +67,7 @@ namespace Zoolandia
                 Console.WriteLine("Habitat : {0}", place.Name);
                 foreach (var inhabitant in place.inhabitants)
                 {
-                    Console.WriteLine("    {0} the {1}", inhabitant.Name.ToString(), inhabitant.CommonName.ToString());
+                    Console.WriteLine("    {0}, the {1}", inhabitant.Name.ToString(), inhabitant.CommonName.ToString().ToLower());
                 }
                 Console.WriteLine();
             }
