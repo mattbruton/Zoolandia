@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Zoolandia.Animals;
 using Zoolandia.Animals.Species;
 using Zoolandia.Habitats;
 
@@ -33,34 +34,25 @@ namespace Zoolandia
             Mountain olympus = new Mountain("Mt. Olympus");
 
             // Add animals to Ocean inhabitants list.
-            pacific.inhabitants.Add(shark);
-            pacific.inhabitants.Add(birdgirl);
-            pacific.inhabitants.Add(birdman);
+            Animal[] PacificAnimals = {shark, birdgirl, birdman};
+            pacific.inhabitants.AddRange(PacificAnimals);
 
             // Add animals to Jungle inhabitants list.
-            wildass.inhabitants.Add(giraffe);
-            wildass.inhabitants.Add(pandaman);
-            wildass.inhabitants.Add(meanbutt);
-            wildass.inhabitants.Add(starfox);
+            Animal[] WildassAnimals = {giraffe, pandaman, meanbutt, starfox};
+            wildass.inhabitants.AddRange(WildassAnimals);
 
             // Add animals to Forest inhabitants list.
-            sherwood.inhabitants.Add(groundhog);
-            sherwood.inhabitants.Add(honeyBadger);
-            sherwood.inhabitants.Add(dog);
-            sherwood.inhabitants.Add(snek);
-            sherwood.inhabitants.Add(foxwoman);
+            Animal[] SherwoodAnimals = {groundhog, honeyBadger, dog, snek, foxwoman};
+            sherwood.inhabitants.AddRange(SherwoodAnimals);
 
             // Add animals to Mountain inhabitants list.
-            olympus.inhabitants.Add(ribbitlady);
-            olympus.inhabitants.Add(ribbitman);
-            olympus.inhabitants.Add(sonOfRibbit);
+            Animal[] OlympusAnimals = {ribbitlady, ribbitman, sonOfRibbit};
+            olympus.inhabitants.AddRange(OlympusAnimals);
 
             // Add all instantiated habitats to a list.
             List<Habitat> places = new List<Habitat>();
-            places.Add(sherwood);
-            places.Add(olympus);
-            places.Add(pacific);
-            places.Add(wildass);
+            Habitat[] ZoolandiaPlaces = {sherwood, olympus, pacific, wildass};
+            places.AddRange(ZoolandiaPlaces);
 
             // Loop through each Habitat in the List "places"
             foreach (Habitat place in places)
