@@ -60,7 +60,7 @@ namespace Zoolandia
                 // Write Habitat name in format requested in exercise.
                 Console.WriteLine("Habitat : {0}", place.Name);
                 // Loop through each Animal in current Habitat and log their name and common name.
-                foreach (var inhabitant in place.inhabitants)
+                foreach (Animal inhabitant in place.inhabitants)
                 {
                     Console.WriteLine("    {0}, the {1}", inhabitant.Name.ToString(), inhabitant.CommonName.ToString().ToLower());
                 }

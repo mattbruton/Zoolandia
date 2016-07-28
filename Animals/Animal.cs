@@ -17,7 +17,7 @@ namespace Zoolandia.Animals
             this.Name = name;
             this.Age = age;
         }
-        public string Name {get; set;}
+        public string Name { get; set;}
         public int Age {get; set;}
         public string CommonName {get; set;}
         protected string ScientificName {get; set;}
