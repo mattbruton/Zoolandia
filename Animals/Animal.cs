@@ -4,7 +4,6 @@ namespace Zoolandia.Animals
 {
     public abstract class Animal 
     {
-        public Animal() {}
         public Animal (string name) 
         {
             this.Name = name;
